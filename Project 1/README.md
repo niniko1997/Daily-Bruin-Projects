@@ -1,5 +1,3 @@
-$Read Me
-
 Requirements:
 
 Have at least one HTML file
