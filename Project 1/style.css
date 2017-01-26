@@ -1,0 +1,91 @@
+html, body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	background: black;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.codrops-header {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 100%;
+	padding: 5vw;
+	pointer-events: none;
+}
+
+.codrops-header__title {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.demos {
+	flex: none;
+	width: 100%;
+	padding: 0.75em 0 0 0;
+}
+
+.demo {
+	font-weight: bold;
+	margin: 0 7em 0.5em 0.1em;
+	pointer-events: visible;
+	color: #A9A9A9;
+}
+
+.demo--current {
+	color: #C0C0C0;
+}
+
+.content__title {
+    font-weight: bold;
+	font-size: 8.0vw;
+	line-height: 1.2;
+	padding: 0 5vw;
+}
+
+.content__title--center {
+	margin: auto;
+}
+
+.content__title__inner {
+
+	flex: none;
+	display: inline-block;
+	white-space: nowrap;
+	position: relative;
+}
+
+.content__title__inner--offset-1 {
+	line-height: -0.25;
+	left: 30.0vw;
+}
+
+.content--full {
+	height: 100vh;
+	min-height: 600px;
+}
+
+.flexy {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+}
+
+.content {
+	position: relative;
+	min-height: 300px;
+}
+
+.content.intro {
+	height: 93vh;
+}
+
