@@ -22,6 +22,12 @@ body {
 	pointer-events: none;
 }
 
+.p {
+	color: red;
+	font-weight: bold;
+	background-color: #9999ff;
+}
+
 .codrops-header__title {
 	font-size: 1.5em;
 	margin: 0;
