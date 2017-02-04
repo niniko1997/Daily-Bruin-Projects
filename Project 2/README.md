@@ -1,5 +1,5 @@
 
-$Project Two
+Project Two
 
 Requirements:
 - Use the USGS Earthquake GeoJSON API (choose any of the live feeds)
