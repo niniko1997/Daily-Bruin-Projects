@@ -1,18 +1,45 @@
 <!doctype html>
 <html>
 <head>
-  <title>Earthquake tracker</title>
+  <title>Earthquake Tracker</title>
   <meta charset='UTF-8' />
+  <meta http-equiv="refresh" content="60" >
   <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css' />
   <link href='style.css' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+  <link rel="stylesheet" type="text/css" href="normalize.css" />
+
+  <script type="text/javascript" src="handlebars.js"></script>
+
 </head>
 <body>
-  <!-- Put your HTML here! -->
 
-  <ul id='sample'></ul> <!-- Remove this sample element -->
+  <div class="titleBar">
+  <img id="icon" src="earthquake.png" />
+  <h1 id="title">Earthquake Data</h1>
+  </div>
+
+
+  <h2> Bringing you the most recent data of earthquakes of magnitude of 4.5 or higher in the past week </h2>
+
+  <div class = "outerwrap">
+  	<div class = "wrapper">
+  		<ul id='sample1'></ul> <!-- Remove this sample element -->
+  	</div>
+
+  	<div class = "wrapper">
+  		<ul id='sample2'></ul> <!-- Remove this sample element -->
+  	</div>
+
+ 	 <div class = "wrapper">
+ 		 <ul id='sample3'></ul> <!-- Remove this sample element -->
+  	</div>
+
+  	<br class="break" />
+  </div>
 
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
   <script src='script.js'></script>
+  <script id="Handlebars-Template" type="text/x-handlebars-template"></script>
 </body>
 </html>
-
