@@ -16,13 +16,30 @@ $(document).ready(function() {
 
   // SAMPLE: Display the earthquake titles on the page
   function simpleEarthquakeDisplay(quakes) {
-    var container = $('#sample').empty();
-    quakes.forEach(function(quake) {
-      var date = new Date(quake.properties.time).toDateString();
+    var container1 = $('#sample1').empty();
+    var container2 = $('#sample2').empty();
+    var container3 = $('#sample3').empty();
+
+    var numOfQuakes = quakes.length;
+    numOfQuakes = numOfQuakes-(numOfQuakes%3);
+    console.log(numOfQuakes);
+
+    for(var i=0; i< numOfQuakes; i++) {
+      var date = new Date(quakes[i].properties.time).toDateString();
 
       var quakeEl = $('<li></li>')
-        .text(quake.properties.title + " " + date)
-        .appendTo(container);
-    });
+        .html("Date: " + date + "<br>" + "Magnitude: " + quakes[i].properties.mag + "<br>" + "Place: " + quakes[i].properties.place)
+
+      if(i<(numOfQuakes/3)){
+        quakeEl.appendTo(container1);
+      }
+      else if(i<(2*numOfQuakes/3)){
+        quakeEl.appendTo(container2);
+      }
+      else{
+        quakeEl.appendTo(container3);
+      }
+
+    }
   }
 });
