@@ -24,7 +24,15 @@ $(document).ready(function() {
     numOfQuakes = numOfQuakes-(numOfQuakes%3);
     console.log(numOfQuakes);
 
-    for(var i=0; i< numOfQuakes; i++) {
+    if(numOfQuakes === 0){
+
+      var logOntoWebSite = $('<li></li>')
+        .text("There is no data for this week")
+        .appendTo(container1);
+
+    }
+    else{
+      for(var i=0; i< numOfQuakes; i++) {
       var date = new Date(quakes[i].properties.time).toDateString();
 
       var quakeEl = $('<li></li>')
@@ -41,5 +49,8 @@ $(document).ready(function() {
       }
 
     }
+
+    }
+    
   }
 });
